@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>House Simulator</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        img {
+            width: 800px;
+            height: 600px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>House Simulator</h1>
+    <img id="roomImage" src="room_pictures/kitchen.jpg" alt="Current Room">
+    <div>
+        <button onclick="changeRoom('kitchen')">Kitchen</button>
+        <button onclick="changeRoom('bathroom')">Bathroom</button>
+        <button onclick="changeRoom('bedroom')">Bedroom</button>
+        <button onclick="changeRoom('living_room')">Living Room</button>
+    </div>
+
+    <script>
+        function changeRoom(room) {
+            document.getElementById("roomImage").src = `room_pictures/${room}.jpg`;
+        }
+    </script>
+</body>
+
+</html>

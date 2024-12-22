@@ -1,3 +1,3 @@
-# House Simulator Online
+# MadsBalto.com
 
-source code for Interactive UI for tour of my house, accessible via [url]
+Sourcecode for my personal websites.

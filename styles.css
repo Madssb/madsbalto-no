@@ -11,6 +11,7 @@ body {
     /* Clean and modern font */
     margin: 0;
     padding: 0;
+    /* border: 2px solid rebeccapurple; */
 }
 
 /* Links and Buttons */
@@ -29,11 +30,11 @@ button {
     background-color: #005B99;
     /* Marine blue */
     color: white;
-    border: none;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
+    border: none;
 }
 
 button:hover {
@@ -49,20 +50,49 @@ h4,
 h5,
 h6 {
     color: #005B99;
-    /* Marine blue headers */
+    text-align: center;
+    /* border: 2px solid rebeccapurple; */
 }
 
 /* Images */
 img {
-    max-width: 100%;
+    max-width: 200px;
     height: auto;
     display: block;
     margin: 0 auto;
+    align-content: center;
 }
+
+/* figure {
+    border: 2px solid rebeccapurple;
+} */
+
+figcaption {
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 20px
+}
+
+
 
 /* Containers */
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+}
+
+.centered {
+    display: block;
+    align-content: center;
+}
+
+.omni-theme {
+    background: light-dark(white, black);
+    color: light-dark(black, white);
 }

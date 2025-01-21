@@ -34,9 +34,15 @@
         <button onclick="changeRoom('living_room')">Living Room</button>
     </div>
 
+    <audio id="soundEffect" src="audio/Vine-boom-sound-effect.mp3"></audio>
+
     <script>
         function changeRoom(room) {
             document.getElementById("roomImage").src = `room_pictures/${room}.jpg`;
+            // Play the sound effect
+            const sound = document.getElementById("soundEffect");
+            sound.currentTime = 0; // Rewind the sound effect to the start
+            sound.play();
         }
     </script>
 </body>

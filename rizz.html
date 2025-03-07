@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Rizz</title>
-
-
 </head>
 
 <body>
@@ -16,17 +14,59 @@
         <img src="images/face.png" alt="Portrett av Mads Balto" width="200">
         <figcaption>Ser du noe du liker? hmu på @madsbalto på instagram ;o</figcaption>
     </figure>
+
     <h2>Interesser</h2>
     <div class="container">
         <ul class="myUL">
+            <li>Musikk</li>
             <li>Programmering (duh)</li>
             <li>Klatring</li>
             <li>League of Legends (desverre)</li>
         </ul>
     </div>
+
     <h2>Personalia</h2>
     <p>23 år, 164cm, flink å spare $$$</p>
-</body>
 
+    <!-- Audio Section -->
+    <audio id="rizzAudio" loop>
+        <source src="audio/rizz.wav" type="audio/wav">
+        Din nettleser støtter ikke lydavspilling.
+    </audio>
+
+    <!-- Centered Volume Control -->
+    <div class="volume-container">
+        <span>🔊</span>
+        <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0">
+    </div>
+
+    <style>
+        .volume-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            /* Adds some space between emoji and slider */
+            margin-top: 10px;
+        }
+    </style>
+
+    <script>
+        const audio = document.getElementById("rizzAudio");
+        const volumeControl = document.getElementById("volumeControl");
+
+        // Start muted
+        audio.volume = 0;
+
+        // Update volume when slider changes
+        volumeControl.addEventListener("input", function () {
+            audio.volume = this.value;
+            if (audio.paused) {
+                audio.play();
+            }
+        });
+    </script>
+
+</body>
 
 </html>

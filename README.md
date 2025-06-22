@@ -1,4 +1,4 @@
 <!-- README.md -->
 # MadsBalto.com
 
-Sourcecode for my personal websites.
+Sourcecode for my personal website.

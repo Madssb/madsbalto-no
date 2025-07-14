@@ -3,5 +3,12 @@
 
 
 ## topp prio
-- oppdater landeside slik at den på minimum har riktig informasjon.
-  - test
+
+
+## medium prio
+- oppdater rizz pagen
+  - legg til nytt bilde uten skjegg
+    - dette krever at jeg tar noen nye bilder, Ikke fornøyd med de jeg har i kamerarullen
+  - legg in omtaler avdeling
+    - finn omtaler
+    - legg til et "sertifisert" symbol eller "dette har blitt faktasjekket"
